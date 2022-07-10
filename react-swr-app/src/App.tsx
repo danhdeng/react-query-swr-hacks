@@ -2,6 +2,7 @@ import React from 'react';
 import {Container, Stack, Title} from '@mantine/core';
 import Login from './components/login/Login';
 import Stopwatch from './components/stopwatch/Stopwatch';
+import Logger from './components/logger/Logger';
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
         <Login />
         <Title>Stop watch timer with SWR</Title>
         <Stopwatch />
+        <Title>Logger with SWR</Title>
+        <Logger />
       </Stack>
     </Container>
   );
