@@ -3,6 +3,7 @@ import {Container, Stack, Title} from '@mantine/core';
 import Login from './components/login/Login';
 import Stopwatch from './components/stopwatch/Stopwatch';
 import Logger from './components/logger/Logger';
+import { GPS } from './components/gps/GPS';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Stopwatch />
         <Title>Logger with useQuery from React-Query</Title>
         <Logger />
+        <Title>GPS locator with useQuery from React-Query</Title>
+        <GPS />
       </Stack>
     </Container>
   );

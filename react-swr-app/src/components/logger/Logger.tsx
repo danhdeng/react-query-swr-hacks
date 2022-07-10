@@ -1,6 +1,6 @@
 import { Stack, Title, Text } from '@mantine/core';
 import React from 'react'
-import swr from 'swr';
+import useSWR from 'swr';
 import { subscribeToLog } from './subscribeToLog';
 
   const loggerListener=subscribeToLog();
@@ -10,7 +10,7 @@ function Logger() {
   // const {data: logStorage}=useQuery("logger", loggerRef.current,{
   //   refetchInterval:500
   // })
-  const {data:logStorage}=swr("logger", loggerListener, {
+  const {data:logStorage}=useSWR("logger", loggerListener, {
     refreshInterval:1000,
     dedupingInterval:1000
   });
