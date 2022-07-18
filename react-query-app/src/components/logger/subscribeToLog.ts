@@ -4,7 +4,7 @@ export const subscribeToLog = () => {
     setInterval(() =>{
         logStorage.push(`${logIndex}: ${Date.now()}`);
         logIndex++;
-        logStorage = logStorage.slice(-5);
+        logStorage = logStorage.slice(-2);
     },500);
 
    

@@ -4,6 +4,11 @@ import Login from './components/login/Login';
 import Stopwatch from './components/stopwatch/Stopwatch';
 import Logger from './components/logger/Logger';
 import { GPS } from './components/gps/GPS';
+import WebWorkerComp from './components/webworker/WebWorkerTry';
+import WorkerComp from './components/worker/WorkerComp';
+import Yolo from './components/yolo/Yolo';
+import GlobalState from './components/globalState/GlobalState';
+import MyState from './components/globalState/myState';
 
 function App() {
   return (
@@ -17,6 +22,10 @@ function App() {
         <Logger />
         <Title>GPS locator with useQuery from React-Query</Title>
         <GPS />
+        <Title>Global State with useQuery from React-Query</Title>
+        <GlobalState />
+         <Title>My State with useQuery from React-Query</Title>
+        <MyState />
       </Stack>
     </Container>
   );
